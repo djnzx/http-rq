@@ -1,12 +1,3 @@
-*.class
 *.iml
 .idea/
-.idea
 target/
-build/
-out/
-.DS_Store
-.project
-.settings
-.classpath
-.recommenders
