@@ -26,7 +26,9 @@ public final class JacksonWithPojoResponse implements Response {
     try {
       return MAPPER.readValue(this.binary(), type);
     } catch (IOException e) {
-      throw new IllegalStateException(e);
+      throw new IllegalArgumentException(
+          "Cannot read as an object. The JSON is not a valid object."
+      );
     }
   }
 
