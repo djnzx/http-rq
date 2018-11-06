@@ -112,6 +112,7 @@ public class Methods implements Endpoints {
     object.forEach((key, value) -> System.out.printf("K:%s, V:%s\n", key, value));
   }
 
+  // https://www.baeldung.com/jackson-vs-gson
   public void method6_post_w_gson_from_plain() throws IOException {
     // engine
     Gson g = new Gson();
